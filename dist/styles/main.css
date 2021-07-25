@@ -1,0 +1,780 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Cerebri Sans Book', sans-serif;
+  -webkit-background-clip: padding-box;
+  color: #000;
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #000; }
+
+button, .button {
+  outline: none;
+  border: none;
+  user-select: none; }
+  button:focus, .button:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+    box-shadow: none !important; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    display: block;
+    list-style: none; }
+
+a, a:visited, a:hover, a:focus, a:active {
+  text-decoration: none; }
+
+input:focus {
+  outline: none; }
+
+label {
+  display: block;
+  text-align: left; }
+
+strong {
+  font-weight: bold; }
+
+p {
+  margin: 0px; }
+
+/* Feel free to change duration  */
+.animated {
+  -webkit-animation-duration: 1000 ms;
+  animation-duration: 1000 ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/* .owl-animated-out - only for current item */
+/* This is very important class. Use z-index if you want move Out item above In item */
+.owl-animated-out {
+  z-index: 1; }
+
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */
+.owl-animated-in {
+  z-index: 0; }
+
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* #### Generated By: http://www.cufonfonts.com #### */
+@font-face {
+  font-family: 'Cerebri Sans Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans Book"), url("../../fonts/Cerebri Sans Book.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans Book Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans Book Italic"), url("../../fonts/Cerebri Sans Book Italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans Italic"), url("../../fonts/Cerebri Sans Italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans SemiBold"), url("../../fonts/Cerebri Sans SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: '../../fonts/Cerebri Sans SemiBold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans SemiBold Italic"), url("Cerebri Sans SemiBold Italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans Bold"), url("../../fonts/Cerebri Sans Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/CerebriSans-Light"), url("../../fonts/CerebriSans-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans Bold Italic"), url("../../fonts/Cerebri Sans Bold Italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans ExtraBold"), url("../../fonts/Cerebri Sans ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans ExtraBold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans ExtraBold Italic"), url("../../fonts/Cerebri Sans ExtraBold Italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Cerebri Sans Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../../fonts/Cerebri Sans Heavy"), url("../../fonts/Cerebri Sans Heavy.woff") format("woff"); }
+
+.white {
+  color: #fff; }
+
+h2 {
+  font-family: 'Cerebri Sans Bold';
+  font-size: 60px; }
+
+.text.weight_semibold {
+  font-family: 'Cerebri Sans SemiBold'; }
+
+.text.weight_bold {
+  font-family: 'Cerebri Sans Bold'; }
+
+.text.weight_light {
+  font-family: 'Cerebri Sans Light'; }
+
+.text.weight_regular {
+  font-family: 'Cerebri Sans Book'; }
+
+.text.size_60 {
+  font-size: 60px; }
+
+.text.size_42 {
+  font-size: 42px; }
+
+.text.size_34 {
+  font-size: 34px; }
+
+.text.size_28 {
+  font-size: 28px; }
+
+.text.size_24 {
+  font-size: 24px; }
+
+.text.size_20 {
+  font-size: 20px; }
+
+.text.size_18 {
+  font-size: 18px; }
+
+.text.size_15 {
+  font-size: 15px; }
+
+.text.size_10 {
+  font-size: 10px; }
+
+.hero {
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #131415;
+  width: 100%; }
+  .hero .subtitle {
+    line-height: 1.6;
+    color: #999999;
+    font-size: 20px;
+    padding: 32px 0 0; }
+  .hero .text-bock {
+    padding: 205px 0 232px; }
+  .hero .social-row {
+    display: flex;
+    align-items: center;
+    padding: 0 0 40px; }
+  .hero .item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 10px; }
+    .hero .item:hover {
+      background: #fff; }
+
+.header .logo {
+  height: 32px; }
+
+.header .inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px 0; }
+  .header .inner a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Cerebri Sans SemiBold';
+    transition: .3s; }
+    .header .inner a:hover {
+      color: #1593ff;
+      transition: .3s; }
+  .header .inner ul {
+    display: flex;
+    align-items: center; }
+  .header .inner li {
+    margin-left: 30px; }
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 72px; }
+
+.link {
+  color: #1593ff;
+  font-size: 15px;
+  font-family: 'Cerebri Sans SemiBold';
+  transition: .3s; }
+  .link:hover {
+    color: #007ae2;
+    transition: .3s; }
+  .link.underline {
+    text-decoration: underline; }
+
+.small-title {
+  color: #999999;
+  text-transform: uppercase; }
+
+.main-content {
+  padding: 100px 0 200px;
+  background: #f5f7fa; }
+  .main-content img {
+    width: 100%; }
+  .main-content .item {
+    margin: 0 0 81px; }
+    .main-content .item.right {
+      margin-top: 52px; }
+  .main-content .img-cover {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 32px; }
+    .main-content .img-cover img {
+      transform: scale(1);
+      transition: .3s; }
+    .main-content .img-cover:hover img {
+      transform: scale(1.05);
+      transition: .3s; }
+
+.clients {
+  padding: 100px 0 148px; }
+  .clients .inner {
+    display: flex;
+    align-items: center; }
+  .clients .left {
+    width: 60%;
+    padding: 0 32px 0 0; }
+  .clients .weight_regular {
+    padding-top: 32px; }
+  .clients .owl-dots {
+    display: flex;
+    align-items: flex-end; }
+  .clients .owl-dot {
+    width: 4px;
+    height: 4px;
+    background: #000000;
+    border-radius: 50%;
+    margin-right: 5px; }
+    .clients .owl-dot.active {
+      background: #0844b0;
+      width: 5px;
+      height: 5px; }
+
+.help {
+  position: relative;
+  background: #f5f7fa;
+  padding: 100px 0 115px; }
+  .help.active .image {
+    background-image: url(../img/dima.jpeg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100% 100%; }
+  .help .image {
+    background-image: url(../img/help.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+  .help .item {
+    padding: 24px;
+    background: #fff;
+    width: 367px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .3s; }
+    .help .item.active {
+      background: #000; }
+      .help .item.active .item-subtitle {
+        color: #fff; }
+      .help .item.active:hover {
+        transform: scale(1); }
+    .help .item:hover {
+      transform: scale(1.05);
+      transition: .3s; }
+    .help .item:active {
+      transform: scale(1);
+      transition: .1s; }
+  .help .item-title {
+    font-size: 20px;
+    font-family: 'Cerebri Sans SemiBold';
+    color: #999999; }
+  .help .item-subtitle {
+    font-size: 15px;
+    font-family: 'Cerebri Sans SemiBold'; }
+
+.blog-section {
+  padding: 160px 0; }
+  .blog-section .item {
+    padding: 0 0 30px; }
+  .blog-section img {
+    width: 100%; }
+  .blog-section .date {
+    font-size: 15px;
+    color: #999999;
+    margin: 20px 0 10px; }
+  .blog-section .title {
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-family: 'Cerebri Sans SemiBold';
+    min-height: 72px; }
+
+.catch-up .inner {
+  background: #f5f7fa;
+  padding: 70px 100px 80px; }
+
+.catch-up .subtitle {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #999999;
+  margin: 24px 0 50px; }
+  .catch-up .subtitle.second {
+    position: relative;
+    margin: 50px 0 0;
+    padding: 0 0 0 24px; }
+    .catch-up .subtitle.second:after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 1px;
+      background: #999999;
+      left: 0px;
+      right: auto;
+      top: 0px; }
+
+.catch-up .items {
+  display: flex; }
+
+.catch-up .item {
+  border: solid 1px #dee3ea;
+  background-color: #f0f3f8;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-right: 40px; }
+  .catch-up .item .left {
+    padding: 24px;
+    position: relative; }
+    .catch-up .item .left .shadow {
+      position: absolute;
+      width: 83px;
+      height: 86px;
+      opacity: 0.2;
+      -webkit-filter: blur(27.2px);
+      filter: blur(27.2px);
+      background-color: #000000;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      bottom: 10px; }
+  .catch-up .item .grey {
+    color: #999999;
+    padding: 0 0 10px; }
+  .catch-up .item img {
+    width: 112px;
+    height: 112px; }
+
+.footer {
+  background: #000;
+  height: 200px;
+  margin-top: 145px; }
+
+/*# sourceMappingURL=main.css.map */

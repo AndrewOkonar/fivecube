@@ -1,0 +1,304 @@
+.hero {
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #131415;
+  width: 100%;
+  .subtitle {
+    line-height: 1.6;
+    color: #999999;
+    font-size: 20px;
+    padding: 32px 0 0;
+  }
+  .text-bock {
+    padding: 205px 0 232px;
+  }
+  .social-row {
+    display: flex;
+    align-items: center;
+    padding: 0 0 40px;
+  }
+  .item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 10px;
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+.header {
+  .logo {
+    height: 32px;
+  }
+  .inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 0;
+    a {
+      color: #fff;
+      font-size: 15px;
+      font-family: 'Cerebri Sans SemiBold';
+      transition: .3s;
+      &:hover {
+        color: #1593ff;
+        transition: .3s;
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      margin-left: 30px;
+    }
+  }
+}
+
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 72px;
+}
+
+.link {
+  color: #1593ff;
+  font-size: 15px;
+  font-family: 'Cerebri Sans SemiBold';
+  transition: .3s;
+  &:hover {
+    color: #007ae2;
+    transition: .3s;
+  }
+  &.underline {
+    text-decoration: underline;
+  }
+}
+
+.small-title {
+  color: #999999;
+  text-transform: uppercase;
+}
+
+.main-content {
+  padding: 100px 0 200px;
+  background: #f5f7fa;
+  img {
+    width: 100%;
+  }
+  .item {
+    margin: 0 0 81px;
+    &.right {
+      margin-top: 52px;
+    }
+  }
+  .img-cover {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 32px;
+    img {
+      transform: scale(1);
+      transition: .3s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.05);
+        transition: .3s;
+      }
+    }
+  }
+}
+
+
+.clients {
+  padding: 100px 0 148px;
+  .inner {
+    display: flex;
+    align-items: center;
+  }
+  .left {
+    width: 60%;
+    padding: 0 32px 0 0;
+  }
+  .weight_regular {
+    padding-top: 32px;
+  }
+  .owl-dots {
+    display: flex;
+    align-items: flex-end;
+  }
+  .owl-dot {
+    width: 4px;
+    height: 4px;
+    background: #000000;
+    border-radius: 50%;
+    margin-right: 5px;
+    &.active {
+      background: #0844b0;
+      width: 5px;
+      height: 5px;
+    }
+  }
+}
+
+.help {
+  position: relative;
+  background: #f5f7fa;
+  padding: 100px 0 115px;
+  &.active{
+    .image {
+      background-image: url(../img/dima.jpeg);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 100% 100%;
+    }
+  }
+  .image {
+    background-image: url(../img/help.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .item {
+    padding: 24px;
+    background: #fff;
+    width: 367px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .3s;
+    &.active {
+      background: #000;
+      .item-subtitle  {
+        color: #fff;
+      }
+      &:hover {
+        transform: scale(1);
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      transition: .3s;
+    }
+    &:active {
+      transform: scale(1);
+      transition: .1s;
+    }
+  }
+  .item-title {
+    font-size: 20px;
+    font-family: 'Cerebri Sans SemiBold';
+    color: #999999;
+  }
+  .item-subtitle {
+    font-size: 15px;
+    font-family: 'Cerebri Sans SemiBold';
+  }
+}
+
+.blog-section {
+  padding: 160px 0;
+  .item {
+    padding: 0 0 30px;
+  }
+  img {
+    width: 100%;
+  }
+  .date {
+    font-size: 15px;
+    color: #999999;
+    margin: 20px 0 10px;
+  }
+  .title {
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-family: 'Cerebri Sans SemiBold';
+    min-height: 72px;
+  }
+}
+
+.catch-up {
+  .inner {
+    background: #f5f7fa;
+    padding: 70px 100px 80px;
+  }
+  .subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #999999;
+    margin: 24px 0 50px;;
+    &.second {
+      position: relative;
+      margin: 50px 0 0;
+      padding: 0 0 0 24px;
+      &:after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 1px;
+        background: #999999;
+        left: 0px;
+        right: auto;
+        top: 0px;
+      }
+    }
+  }
+  .items {
+    display: flex;
+  }
+  .item {
+    border: solid 1px #dee3ea;
+    background-color: #f0f3f8;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin-right: 40px;
+    .left {
+      padding: 24px;
+      position: relative;
+      .shadow {
+        position: absolute;
+        width: 83px;
+        height: 86px;
+        opacity: 0.2;
+        -webkit-filter: blur(27.2px);
+        filter: blur(27.2px);
+        background-color: #000000;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        bottom: 10px;
+      }
+    }
+    .grey {
+      color: #999999;
+      padding: 0 0 10px;
+    }
+    img {
+      width: 112px;
+      height: 112px;
+    }
+  }
+}
+
+.footer {
+  background: #000;
+  height: 200px;
+  margin-top: 145px;
+}
